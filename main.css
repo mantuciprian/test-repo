@@ -1,0 +1,155 @@
+body{
+background-color:rgb(43, 62, 79)
+}
+.ongoingBattles{
+font-size: 25px;  
+}
+header{
+margin: auto;
+width:80%;
+color:rgb(253, 252, 251);
+}
+header input{
+color:black;
+font-size:15px;
+}
+header button{
+    margin-left:10px;
+    margin-right:5px;
+}
+header+hr{
+width:80%
+}
+.region{
+padding:10px; 
+}
+.regionName{
+    font-size:20px;
+    padding:10px;
+}
+.conflict{
+    float:right;
+    font-size: 17px;
+    padding: 10px;
+}
+.conType{
+    font-size:20px;
+}
+.battlesList{
+    width:80%;
+    margin:auto;
+    color:rgb(253, 252, 251);
+}
+.battleItem{
+    background-color:rgb(77, 93, 108)
+}
+.battleItem hr{
+width:99.5%;
+color:rgb(110,114,127);
+}
+.theFight{
+    font-size:17px;
+    width:100%;
+}
+.area{
+   width:100%;
+    margin:auto;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+}
+.invArea{
+    text-align: center;
+  margin-right:10%;
+  font-size: 21px;
+}
+.space{
+    padding:10px;
+}
+.defArea{
+    text-align: center;
+    margin-left:10%;
+    font-size: 21px;
+}
+.fightersName{
+    width:100%;
+    text-align: center;
+}
+.invName{
+    padding:5px;
+    margin-right:20%;
+    text-align: center;
+    font-size: 27px; 
+}
+.defName{
+    padding:5px;
+    margin-left:20%;
+    text-align: center;
+    font-size: 27px;
+}
+.leaderBoard{
+    padding-left:10px;
+    padding-bottom:5px;
+}
+.lead{
+    padding-left:10px;
+    padding-bottom:10px;
+    font-size:17px;
+}
+footer{
+    margin:auto;
+    width:80%;
+    text-align:center;
+}
+.battleItem:hover{
+    background-color:rgb(72, 86, 99);
+}
+header input:focus{
+    border:2px solid rgb(46, 46, 161);
+   border-radius: 5px;
+}
+.glyphicon.green{
+    color:#93ffb9;
+}
+.vs{
+    margin:auto;
+    width:100%;
+    padding-top:40px;
+    padding-bottom:40px;
+  
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    .invName{
+       font-size:17px;
+        margin-right:15%;
+    }
+    .defName{
+        font-size:17px;
+         margin-left:15%;
+     }
+    .regionName{
+        float: left;
+    }
+    header{
+        text-align:center;
+    }
+    header input{
+        width:100%;
+    }
+    .lead{
+        text-align: center;
+    }
+   footer{
+       width:50%
+   }
+}
+@media screen and (max-width: 800px) {
+    .regionName{
+        float: left;
+    }
+    
+    header{
+        text-align:center;
+    }
+}

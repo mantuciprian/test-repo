@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Battle App</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+</head>
+<body ngCloak>
+   <div ui-view></div>
+    <script src="main.js"></script>
+    <script src="services/dataService.js"></script>
+    <script src="lib/dirPagination.js"></script>
+    <script src="filters/toArrayFilter.js"></script>
+    <script src="filters/searchCountryFilter.js"></script>
+    <script src="controllers/main.controllers.js"></script>
+</body>
+</html>

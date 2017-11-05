@@ -1,0 +1,7 @@
+-use git bash or similar and run npm start
+-go 8080 port on the brwoser
+- Make sure you have the Allow-Control-Allow-Origin extension for 
+chrome, otherwise it will throw an error like
+'No 'Access-Control-Allow-Origin' header is present on the requested resource';
+go to (https://stackoverflow.com/questions/24134117/no-access-control-allow-origin-header-is-present-on-the-requested-resource-an)
+for more details.

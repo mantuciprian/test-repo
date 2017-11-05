@@ -1,0 +1,71 @@
+
+<header>
+        <h3>Battle game</h3>
+        <span class='ongoingBattles'>
+                Search your country: <input type='text' ng-model="country"> 
+        </span>
+        <button type="button" style="color:black" ng-click="orderCountries('def.name','def')">Defender</button>
+        <span class="glyphicon" ng-class="[def ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down',
+        {'green' : actionClick === 'def'}]"></span>
+        
+        <button type="button" style="color:black" ng-click="orderCountries('inv.name','inv')">Invader</button>
+        <span class="glyphicon" ng-class="[inv ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down',
+        {'green' : actionClick === 'inv'}]"></span>
+       
+        <button type="button" style="color:black" ng-click="orderCountries('','all')">All</button>
+        <span class="glyphicon" ng-class="[all ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down',
+        {'green' : actionClick === 'all'}]"></span> 
+
+</header>
+<hr>
+<section>              
+<div class='battlesList' 
+     dir-paginate="battle in battles |toArray:false|searchCountry:country|orderBy:countryName:startName|itemsPerPage:3" >
+<div class='battleItem'>
+<div>
+        <h2 class='region'>Region</h2>
+        <span class='regionName'>{{battle.region.name}}</span> 
+        <span class='conflict'>Conflict Type: 
+        <span class='conType'>{{battle.type}}</span></span>
+</div>
+<hr>
+<div class='theFight'>
+<div class='area'><span class='invArea'>Invader</span><span class='defArea'> Defender</span></div>
+<div class='vs'>
+<span class='invPoints'>{{battle.inv.points}} points</span>
+<span class='space'>vs</span>
+<span class='defPoints'>{{battle.def.points}} points</span> 
+</div>
+<div class='fightersName'>
+<span class='invName'>{{battle.inv.name}}</span>
+<span class='defName'>{{battle.def.name}}</span>
+</div>       
+</div>
+<div class='leaderBoard'>
+</div>
+<div class='lead'>
+<span>
+Lead:{{battle.inv.points > battle.def.points ? battle.inv.name : battle.def.name}}
+</span>
+</div>
+</div>
+</div>
+<section>
+<footer>
+<dir-pagination-controls
+[max-size="3"]
+[direction-links=""]
+[boundary-links=""]
+[on-page-change=""]
+[pagination-id=""]
+[template-url=""]
+[auto-hide=""]>
+</dir-pagination-controls>
+</footer>
+
+
+
+
+
+
+
