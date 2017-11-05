@@ -22,5 +22,4 @@ var toArray = function () {
 };
 
 angular.module('toArray',[]).filter('toArray', toArray);
-
 })();

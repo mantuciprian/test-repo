@@ -31,5 +31,4 @@ var searchCountry = function() {
   };
 
 angular.module('searchCountry',[]).filter('searchCountry', searchCountry);
- 
 })();
