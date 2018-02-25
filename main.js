@@ -17,4 +17,4 @@ function ($stateProvider, $urlRouterProvider) {
             })
         }]);
    
-   
+   const pork = 'pork';
